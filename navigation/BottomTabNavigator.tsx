@@ -28,23 +28,23 @@ export const BottomTabNavigator: React.FC = () => {
         name="TabOne"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
-          ),
+          tabBarIcon: IosTabBarIcon,
         }}
       />
       <BottomTab.Screen
         name="TabTwo"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
-          ),
+          tabBarIcon: IosTabBarIcon,
         }}
       />
     </BottomTab.Navigator>
   );
 };
+
+function IosTabBarIcon(props: { color: string }) {
+  return <TabBarIcon name="ios-code" color={props.color} />;
+}
 
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
