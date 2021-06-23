@@ -7,6 +7,7 @@
     "navigation/*.tsx",
     "navigation/**/*.tsx",
     "screens/**/*.tsx",
+    "App.tsx",
     ".eslintrc.js"
   ],
   "exclude": [
